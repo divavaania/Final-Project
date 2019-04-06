@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="review.html"></script>
+    <header class="w3-pink">
+      <h1 style="font-size: 100px; text-align: center;">
+        <b>socio<i>ll</i>a</b>
+      </h1>
+    </header>
+  </head>
+
+  <body class="w3-content w3-section" style="max-width:2500px">
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-pink">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>REVIEW</h2>
+        </header>
+        <div class="w3-container" align="center">
+          <form
+            action="https://formspree.io/vaniagilda@gmail.com"
+            method="POST"
+            id="form_submit_review"
+            name="form_submit_review"
+          >
+            <div class="form-write-review">
+              <div class="title-form" style="font-size: 25px;">
+                <b>Write Review</b>
+              </div>
+              <div class="scrollable">
+                <div class="detail-product">
+                  <img
+                    id="bigpic"
+                    src="https://s3-ap-southeast-1.amazonaws.com/img-sociolla/img/p/2/7/1/6/2716-large_default.jpg"
+                    title="Powder Brush"
+                    alt="Powder Brush"
+                    class="img-responsive"
+                  />
+                  <div class="right">
+                    <h3>Real Techniques</h3>
+                    <p>Powder Brush</p>
+                  </div>
+                </div>
+
+                <h4 class="title-big required">Your Review</h4>
+                <div class="textarea-review">
+                  <span class="count"></span>
+                  <input
+                    type="hidden"
+                    name="product"
+                    value="Real Techniques Powder Brush"
+                  />
+                  <input
+                    type="text"
+                    name="nama"
+                    placeholder="Your Name"
+                  /><br /><br />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                  /><br /><br />
+                  <textarea
+                    name="detail"
+                    placeholder="Minimum 150 characters"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="publish-review">
+                <p>
+                  Psst... Baca ulang yuk review yang sudah kamu buat.<br />
+                  Review yang sudah di-publish, tidak bisa kamu ubah lagi.
+                </p>
+                <button type="submit" class="w3">
+                  Publish
+                  <span class="loaderspin"></span>
+                </button>
+                <p class="error-publish-msg"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <footer class="w3-container w3-pink" style="font-size: 22px">
+          Copyright 2019
+        </footer>
+      </div>
+    </div>
+
+    <table class="w3-table">
+      <tr>
+        <td>
+          <img
+            id="bigpic"
+            src="https://s3-ap-southeast-1.amazonaws.com/img-sociolla/img/p/2/7/1/6/2716-large_default.jpg"
+            title="Powder Brush"
+            alt="Powder Brush"
+            class="img-responsive"
+          />
+        </td>
+        <td>
+          <h3 class="">Real Techniques</h3>
+          <p>Powder Brush</p>
+          <p>
+            Detail : Powder brush by Samantha Chapman brush yang dibuatnya dapat
+            mengaplikasikan bedak dan foundation menjadi lebih lembut dan
+            memberikan hasil yang high-definition.
+          </p>
+          <p>
+            HOW TO USE : Gunakan powder brush untuk mengaplikasikan bedak tabur
+            atau foundation pada wajah anda.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <h2>REVIEWS :</h2>
+    <button
+      class="w3-button w3-xlarge w3-circle w3-black"
+      onclick="document.getElementById('id01').style.display='block'"
+      class="w3-button w3-black"
+    >
+      +
+    </button>
+    <h3>Add Review</h3>
+    <footer class="w3-pink">
+      <h3>2019 © Sociolla. All Rights Reserved</h3>
+    </footer>
+  </body>
+</html>

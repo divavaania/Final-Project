@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="review.html"></script>
+    <header class="w3-pink">
+      <h1 style="font-size: 100px; text-align: center;">
+        <b>socio<i>ll</i>a</b>
+      </h1>
+    </header>
+  </head>
+
+  <body class="w3-content w3-section" style="max-width:2500px">
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-pink">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright"
+            >&times;</span
+          >
+          <h2>REVIEW</h2>
+        </header>
+        <div class="w3-container" align="center">
+          <form
+            action="https://formspree.io/vaniagilda@gmail.com"
+            method="POST"
+            id="form_submit_review"
+            name="form_submit_review"
+          >
+            <div class="form-write-review">
+              <div class="title-form" style="font-size: 25px;">
+                <b>Write Review</b>
+              </div>
+              <div class="scrollable">
+                <div class="detail-product">
+                  <img
+                    id="bigpic"
+                    src="https://s3-ap-southeast-1.amazonaws.com/img-sociolla/img/p/7/5/3/5/7535-large_default.jpg"
+                    title="Blush Brush - 1407"
+                    alt="Blush Brush - 1407"
+                    class="img-responsive"
+                  />
+                  <div class="right">
+                    <h3>Real Techniques</h3>
+                    <p>Blush Brush</p>
+                  </div>
+                </div>
+
+                <h4 class="title-big required">Your Review</h4>
+                <div class="textarea-review">
+                  <span class="count"></span>
+                  <input
+                    type="hidden"
+                    name="product"
+                    value="Real Techniques Blush Brush-1407"
+                  />
+                  <input
+                    type="text"
+                    name="nama"
+                    placeholder="Your Name"
+                  /><br /><br />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your email"
+                  /><br /><br />
+                  <textarea
+                    name="detail"
+                    placeholder="Minimum 150 characters"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="publish-review">
+                <p>
+                  Psst... Baca ulang yuk review yang sudah kamu buat.<br />
+                  Review yang sudah di-publish, tidak bisa kamu ubah lagi.
+                </p>
+                <button type="submit" class="w3">
+                  Publish
+                  <span class="loaderspin"></span>
+                </button>
+                <p class="error-publish-msg"></p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <footer class="w3-container w3-pink" style="font-size: 22px">
+          Copyright 2019
+        </footer>
+      </div>
+    </div>
+
+    <table class="w3-table">
+      <tr>
+        <td>
+          <img
+            id="bigpic"
+            src="https://s3-ap-southeast-1.amazonaws.com/img-sociolla/img/p/7/5/3/5/7535-large_default.jpg"
+            title="Blush Brush - 1407"
+            alt="Blush Brush - 1407"
+            class="img-responsive"
+          />
+        </td>
+        <td>
+          <h3 class="">Real Techniques</h3>
+          <p>Blush Brush</p>
+          <p>Gunakanlah kuas ini untuk tampil cantik mempesona!</p>
+          <p>
+            <strong>Real Techniques 1407 Blush Brush&nbsp;</strong>merupakan
+            sebuah langkah terakhir untuk tampil sempurna. Dengan hasil yang
+            tampak berkualitas untuk <strong>kontur wajah</strong> dan
+            <strong>membentuk tulang pipi</strong> dengan cantik sempurna.&nbsp;
+          </p>
+          <p>
+            Untuk kontur wajah dan membentuk tulang pipi dengan hasil sempurna,
+            dengan fungsi-fungsi lain seperti:
+          </p>
+          <ul>
+            <li>Terlihat sempurna dalam kondisi cahaya apapun</li>
+            <li><strong>Bulu sintetis</strong> yang mewah dan halus</li>
+            <li>Dapat disimpan dengan mudah di dalam tas kosmetik</li>
+            <li>Gagang alumunium ringan dan mudah digenggam</li>
+          </ul>
+          <p></p>
+          <p><strong>Cara Penggunaan :</strong></p>
+          <p>Gunakan untuk membentuk kontur wajah dan memulas tulang pipi</p>
+        </td>
+      </tr>
+    </table>
+
+    <h2>REVIEWS :</h2>
+    <button
+      class="w3-button w3-xlarge w3-circle w3-black"
+      onclick="document.getElementById('id01').style.display='block'"
+      class="w3-button w3-black"
+    >
+      +
+    </button>
+    <h3>Add Review</h3>
+    <footer class="w3-pink">
+      <h3>2019 © Sociolla. All Rights Reserved</h3>
+    </footer>
+  </body>
+</html>
